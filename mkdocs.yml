@@ -4,6 +4,7 @@ site_description: Olly Overend's personal website and blog.
 site_url: https://ollyoverend.dev
 repo_name: OliverOverend/ollyoverend.dev
 repo_url: https://github.com/OliverOverend/ollyoverend.dev
+edit_uri: edit/main/docs/
 docs_dir: docs
 copyright: Copyright &copy; 2024 Olly Overend
 
@@ -15,6 +16,9 @@ theme:
     code: Red Hat Mono
   icon:
     logo: fontawesome/solid/o
+    repo: fontawesome/brands/github
+    edit: material/pencil 
+    view: material/eye
   favicon: assets/images/favicon.png
   features:
     - navigation.footer
@@ -26,6 +30,8 @@ theme:
     - search.highlight # Highlight all occurrences of queried string
     - search.share # Search Query can be copied to Clipboard
     - search.suggest # Display likeliest completion for the last queried word
+    - content.action.view
+    - content.action.edit
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -68,7 +74,9 @@ markdown_extensions:
 
 plugins:
   - search
-  - blog
+  - blog:
+      blog_toc: true
+
 
 nav:
   - Home: index.md

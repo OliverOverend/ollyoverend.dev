@@ -5,8 +5,6 @@
 {{ super() }}
 
 
-<!-- Stole this styling from the "up42-py" project (link: https://sdk.up42.com/) -->
-<!-- .tx-container Original Green Gradient: hsla(160deg,47%,55%,1) -->
 <style>
     .md-main {
         flex-grow: 0
@@ -19,7 +17,7 @@
 
     .tx-container {
         padding-top: .0rem;
-        background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.home_gradient_hsla }} 99%,#fff 99%)
+        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.home_gradient_hsla }} 99%,#fff 99%) */
     }
 
     .tx-hero {
@@ -39,13 +37,17 @@
         height: 100%;
         padding-bottom: 1rem;
         margin: 0 auto;
+        padding-left: 10rem;
     }
 
     .tx-hero__image {
-        width: 100%;
-        height: 100%;
+        margin-right: 10rem;
+        border-radius: 25px;
+        width: 60%;
+        height: 40%;
+        overflow: hidden;
         order: 1;
-        padding-right: 2.5rem;
+        display: flex;
     }
 
     .tx-hero .md-button {
@@ -56,7 +58,7 @@
 
     .tx-hero .md-button--primary {
         background-color: var(--md-primary-bg-color);
-        color: hsla(280deg, 37%, 48%, 1);
+        color: var(--md-primary-fg-color);
         border-color: var(--md-primary-bg-color)
     }
 
@@ -268,20 +270,6 @@
     </div>
 </section>
 
-
-
-
-<!-- Toggleable JavaScript execution -->
-{%- if config.home_execute_js -%}
-<script>
-    document$.subscribe(function () {
-        console.log("'home_execute_js' is enabled:");
-        { { config.home_execute_js } }
-    }).unsubscribe();
-</script>
-{%- endif -%}
-
-
 {% endblock %}
-{% block content %}{% endblock %}
-{% block footer %}{% endblock %}
+/* {% block content %}{% endblock %} */
+/* {% block footer %}{% endblock %} */

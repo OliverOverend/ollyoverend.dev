@@ -1,6 +1,11 @@
 ---
-draft: true 
-date: 2025-06-16 
+categories:
+  - Python
+date: 2025-06-21 
+draft: true
+tags:
+  - dependencies
+updated: 2025-06-21 
 ---
 
 # Defining Python Dependencies

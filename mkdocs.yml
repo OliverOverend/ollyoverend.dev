@@ -85,7 +85,7 @@ nav:
   - Blog:
     - blog/index.md
 
-home_cover_image: assets/images/wallpaper.png
+home_cover_image: assets/images/me.jpg
 home_tagline: Olly Overend
 home_description: |
   My personal website and blog.

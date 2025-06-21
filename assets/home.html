@@ -57,16 +57,16 @@
     }
 
     .tx-hero .md-button--primary {
-        background-color: var(--md-primary-bg-color);
-        color: var(--md-primary-fg-color);
-        border-color: var(--md-primary-bg-color)
+        background-color: var(--md-button-primary-bg-color);
+        color: var(--md-button-primary-color);
+        border-color: var(--md-button-primary-bg-color)
     }
 
     .tx-hero .md-button:focus,
     .tx-hero .md-button:hover {
-        background-color: var(--md-accent-fg-color);
-        color: var(--md-default-bg-color);
-        border-color: var(--md-accent-fg-color)
+        background-color: var(--md-button-hover-bg-color);
+        color: var(--md-button-hover-color);
+        border-color: var(--md-button-hover-bg-color)
     }
 
     .feature-item h2 svg {
@@ -271,5 +271,5 @@
 </section>
 
 {% endblock %}
-/* {% block content %}{% endblock %} */
-/* {% block footer %}{% endblock %} */
+{% block content %}{% endblock %}
+{% block footer %}{% endblock %}

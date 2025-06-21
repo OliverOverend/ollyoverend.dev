@@ -82,7 +82,6 @@ markdown_extensions:
 plugins:
   - search
   - blog:
-      blog_toc: true
       archive_date_format: MMMM yyyy
       pagination_per_page: 5
   - material/tags:

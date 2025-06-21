@@ -11,16 +11,12 @@ updated: 2025-06-21
 
 Most Python packages depend on a (often complex) collection of other Python packages to work. When releasing a Python package it is crucial to define the dependencies needed by the package, as well as the range of compatible versions.
 
-## Should I pin dependency versions?
+## App
 
-I'd generally recommend not pinning dependencies if the users are likely to use the package in the same environment as other packages. Pinning can cause dependency conflicts, especially if those other packages are not pinning the same dependency versions.
+An app is a Python package that is sometimes deployed, or used directly by the user, and doesn't have to be compatible with other libraries. In order to ensure reproducibility, you should probably be pinning the top-level dependencies and the sub-dependencies (i.e. dependencies of the dependencies) using a lockfile. Since an app doesn't need to live in the same environment as other libraries, there is no requirement to define a wide range of compatible versions.
 
-Even if you pin the top-level dependencies you may not be pinning the sub-dependencies (i.e. dependencies of the dependencies), as a [lockfile](https://pydevtools.com/handbook/explanation/what-is-a-lock-file/#:~:text=A%20lockfile%20is%20a%20text,different%20systems%20and%20time%20periods.) does. A lockfile helps to create a 'single source of truth' that can be reliably reproduced.
+## Library
 
-## What range of versions should I set?
+A library is a Python package that a user will probably use with other libraries in the same environment. When developing a library, I'd generally recommend not pinning dependencies if you can avoid it. Pinning can cause dependency conflicts, especially if those other libraries are not pinning the same dependency versions. A general rule of thumb is to aim for a strict lower bound, when possible. This forces your users to use a more recent version, which is generally considered to be a good thing because the code should have fewer bugs and better features available.
 
-If the dependencies follow [SemVer](https://semver.org/), you might be inclined to set upper bound version constraints. However, this [post](https://iscinumpy.dev/post/bound-version-constraints/) explains 'why always providing an upper limit can cause far more harm than good, even for true SemVer libraries. Libraries that pin upper limits require more frequent updates rather than less, and this approach is not scalable.'.
-
-## Supporting Links
-
-- [Setup vs. Requirements: Explains the difference between setup.py and requirements.txt in Python packaging.](https://caremad.io/posts/2013/07/setup-vs-requirement/)
+You might be inclined to set upper bound version constraints, however think twice before doing so. This detailed [post](https://iscinumpy.dev/post/bound-version-constraints/) explains why always capping can have a negative effect overall. Capping can make your library incompatible with libraries that have strict lower limits, and users cannot fix an over restrictive cap. However, it sometimes a valid approach; if you know that certain existing/upcoming versions are buggy, then it's probably wise to restrict those buggy versions now and aim to remove the cap quickly.

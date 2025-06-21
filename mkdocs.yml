@@ -21,6 +21,7 @@ theme:
     view: material/eye
   favicon: assets/images/favicon.png
   features:
+    - content.code.copy
     - navigation.footer
     - navigation.tabs
     - navigation.tabs.sticky # Static upper section tabs (stay)

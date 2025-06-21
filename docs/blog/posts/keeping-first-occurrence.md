@@ -2,7 +2,6 @@
 categories:
   - Python
 date: 2025-06-21 
-draft: true
 tags:
   - numpy
 updated: 2025-06-21 

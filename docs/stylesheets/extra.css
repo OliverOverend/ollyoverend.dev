@@ -1,3 +1,4 @@
+/* https://github.com/squidfunk/mkdocs-material/blob/74f6007e319ed4768697e74ad3d73bc8b0b298cd/src/templates/assets/stylesheets/main/_colors.scss#L66 */
 [data-md-color-scheme="custom-light"] {
   --md-primary-fg-color:        #4ea6e9;
   --md-primary-fg-color--light: #ffffff;
@@ -18,7 +19,7 @@
   --md-default-fg-color--light:        hsla(0, 0%, 0%, 0.54);
   --md-default-fg-color--lighter:      hsla(0, 0%, 0%, 0.32);
   --md-default-fg-color--lightest:     hsla(0, 0%, 0%, 0.07);
-  --md-default-bg-color:               hsla(0, 0%, 100%, 1);
+  --md-default-bg-color:               #ffffff;
   --md-default-bg-color--light:        hsla(0, 0%, 100%, 0.7);
   --md-default-bg-color--lighter:      hsla(0, 0%, 100%, 0.3);
   --md-default-bg-color--lightest:     hsla(0, 0%, 100%, 0.12);
@@ -76,8 +77,69 @@
   --md-button-hover-color:        #4ea6e9;
 }
 
-[data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        #0e538d;
+/* https://github.com/squidfunk/mkdocs-material/blob/74f6007e319ed4768697e74ad3d73bc8b0b298cd/src/templates/assets/stylesheets/palette/_scheme.scss */
+[data-md-color-scheme="custom-dark"] {
+  --md-primary-fg-color:        #144367;
+  --md-primary-fg-color--light: #2974ad;
+  --md-primary-fg-color--dark:  #000000;
+
+  --md-primary-bg-color:  #ffffff;
+  --md-primary-bg-color--light:  #ffffff;
+
+  --md-accent-fg-color: #4ea6e9;
+  --md-accent-fg-color--transparent:#1476b8; 
+
+  --md-accent-bg-color:#1476b8;
+  --md-accent-bg-color--light:#1476b8;
+
+  --md-hue: 225deg;
+  --md-default-fg-color:             hsla(var(--md-hue), 15%, 90%, 0.82);
+  --md-default-fg-color--light:      hsla(var(--md-hue), 15%, 90%, 0.56);
+  --md-default-fg-color--lighter:    hsla(var(--md-hue), 15%, 90%, 0.32);
+  --md-default-fg-color--lightest:   hsla(var(--md-hue), 15%, 90%, 0.12);
+  --md-default-bg-color:             hsla(var(--md-hue), 15%, 14%, 1);
+  --md-default-bg-color--light:      hsla(var(--md-hue), 15%, 14%, 0.54);
+  --md-default-bg-color--lighter:    hsla(var(--md-hue), 15%, 14%, 0.26);
+  --md-default-bg-color--lightest:   hsla(var(--md-hue), 15%, 14%, 0.07);
+
+  --md-code-fg-color:                hsla(var(--md-hue), 18%, 86%, 0.82);
+  --md-code-bg-color:                hsla(var(--md-hue), 15%, 18%, 1);
+
+  --md-code-hl-color:  #1476b8;
+  --md-code-hl-color--light:  #1476b8;
+
+  --md-code-hl-number-color:         hsla(6, 74%, 63%, 1);
+  --md-code-hl-special-color:        hsla(340, 83%, 66%, 1);
+  --md-code-hl-function-color:       hsla(291, 57%, 65%, 1);
+  --md-code-hl-constant-color:       hsla(250, 62%, 70%, 1);
+  --md-code-hl-keyword-color:        hsla(219, 66%, 64%, 1);
+  --md-code-hl-string-color:         hsla(150, 58%, 44%, 1);
+  --md-code-hl-name-color:           var(--md-code-fg-color);
+  --md-code-hl-operator-color:       var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color:    var(--md-default-fg-color--light);
+  --md-code-hl-comment-color:        var(--md-default-fg-color--light);
+  --md-code-hl-generic-color:        var(--md-default-fg-color--light);
+  --md-code-hl-variable-color:       var(--md-default-fg-color--light);
+
+  --md-typeset-color:                var(--md-default-fg-color--light);
+
+  --md-typeset-a-color:              var(--md-primary-fg-color--light);
+
+  --md-typeset-kbd-color:            hsla(var(--md-hue), 15%, 90%, 0.12);
+  --md-typeset-kbd-accent-color:     hsla(var(--md-hue), 15%, 90%, 0.2);
+  --md-typeset-kbd-border-color:     hsla(var(--md-hue), 15%, 14%, 1);
+
+  --md-typeset-mark-color:  #1476b8;
+
+  --md-typeset-table-color:          hsla(var(--md-hue), 15%, 95%, 0.12);
+  --md-typeset-table-color--light:   hsla(var(--md-hue), 15%, 95%, 0.035);
+
+  --md-admonition-fg-color:          var(--md-default-fg-color);
+  --md-admonition-bg-color:          var(--md-default-bg-color);
+
+  --md-footer-bg-color:              hsla(var(--md-hue), 15%, 10%, 0.87);
+  --md-footer-bg-color--dark:        hsla(var(--md-hue), 15%, 8%, 1);
+
   --md-button-primary-bg-color:          #0e538d;
   --md-button-primary-color:          #ffffff;
   --md-button-hover-bg-color:        #ffffff;

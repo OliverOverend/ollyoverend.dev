@@ -53,7 +53,7 @@ theme:
         name: Switch to dark mode
 
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: custom-dark
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
@@ -107,8 +107,6 @@ home_cover_image: assets/images/me.jpg
 home_tagline: Olly Overend
 home_description: |
   I'm a Machine Learning Engineer at AXA Insurance UK, living in London.
-
-home_gradient_hsla: hsla(10deg,100%,100%,0.1)
 
 home_button1_name: Blog
 home_button1_url: blog/

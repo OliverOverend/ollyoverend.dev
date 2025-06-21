@@ -6,10 +6,6 @@
 
 
 <style>
-    .md-main {
-        flex-grow: 0
-    }
-
     .md-main__inner {
         display: flex;
         height: 100%;
@@ -17,7 +13,7 @@
 
     .tx-container {
         padding-top: .0rem;
-        /* background: linear-gradient(to bottom, var(--md-primary-fg-color), {{ config.home_gradient_hsla }} 99%,#fff 99%) */
+        background: linear-gradient(to bottom, var(--md-primary-fg-color), var(--md-default-bg-color))
     }
 
     .tx-hero {
@@ -215,31 +211,15 @@
         margin-top: 0;
         margin-bottom: 30px;
     }
-
-    .md-footer-meta__inner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 1.0rem;
-    }
-
-    .md-footer-social {
-        padding-top: 20px;
-    }
 </style>
 
 
-<!-- Main site entry button descriptions -->
 <section class="tx-container">
     <div class="md-grid md-typeset">
         <div class="tx-hero">
-
-            <!-- Custom Image -->
             <div class="tx-hero__image">
                 <img src="{{ config.home_cover_image }}" draggable="false">
             </div>
-
-            <!-- Main Tagline -->
             <div class="tx-hero__content">
                 <h1>{{ config.home_tagline }}</h1>
                 <p>{{ config.home_description }}</p>

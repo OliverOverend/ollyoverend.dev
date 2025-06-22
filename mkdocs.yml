@@ -1,91 +1,84 @@
+# Project information
 site_author: Olly Overend
-site_name: ollyoverend.dev
 site_description: Olly Overend's personal website and blog.
-site_url: https://ollyoverend.dev
-repo_url: https://github.com/OliverOverend/ollyoverend.dev
-edit_uri: edit/main/docs/
-docs_dir: docs
-copyright: Copyright &copy; 2024 Olly Overend
+site_name: ollyoverend.dev
+site_url: https://oliveroverend.github.io/ollyoverend.dev/
 
+# Repository
+edit_uri: edit/main/docs/
+# Setting 'repo_name' introduced a bug on iOS.
+repo_url: https://github.com/OliverOverend/ollyoverend.dev
+
+# Copyright
+copyright: Copyright &copy; 2025 Olly Overend
+
+# Configuration
 theme:
-  icon:
-    repo: fontawesome/brands/github
-    edit: material/pencil
-    view: material/eye
-  name: material
-  custom_dir: assets
-  font:
-    text: Merriweather Sans
-    code: Red Hat Mono
-  logo: assets/images/me.png
+  custom_dir: docs/html/
   favicon: assets/images/me.png
   features:
-    - header.autohide
     - announce.dismiss
-    - content.code.copy
-    - navigation.footer
-    - navigation.tabs
-    - navigation.tabs.sticky # Static upper section tabs (stay)
-    - navigation.expand
-    - navigation.top
-    # - navigation.sections
-    - navigation.indexes # Implied section 'index.md' files
-    - navigation.instant # Keep navigation from reloading
-    - navigation.instant.progress # Display page loading progress-bar ( > 400ms)
-    - search.highlight # Highlight all occurrences of queried string
-    - search.share # Search Query can be copied to Clipboard
-    - search.suggest # Display likeliest completion for the last queried word
-    - content.action.view
     - content.action.edit
-
+    - content.action.view
+    - content.code.copy
+    - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+  font:
+    code: Red Hat Mono
+    text: Merriweather Sans
+  icon:
+    edit: material/pencil
+    repo: fontawesome/brands/github
+    view: material/eye
+  logo: assets/images/me.png
+  name: material
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/link
         name: Switch to light mode
-
+        icon: material/link
     - media: "(prefers-color-scheme: light)"
       scheme: custom-light
       toggle:
-        icon: material/toggle-switch
         name: Switch to dark mode
-
+        icon: material/toggle-switch
     - media: "(prefers-color-scheme: dark)"
       scheme: custom-dark
       toggle:
-        icon: material/toggle-switch-off
         name: Switch to system preference
+        icon: material/toggle-switch-off
 
+# Extensions
 markdown_extensions:
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Code blocks
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
 
 plugins:
-  - search
   - blog:
-      blog_toc: false
       archive_date_format: MMMM yyyy
+      blog_toc: false
       pagination_per_page: 5
   - material/tags:
       tags_file: blog/tags.md
+  - search
 
+# Extra configuration
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -94,10 +87,6 @@ extra:
       link: https://www.linkedin.com/in/ollyoverend/
 
   home:
-    cover_image: assets/images/me.png
-    tagline: Olly Overend
-    description: |
-      I'm a Machine Learning Engineer at AXA Insurance UK, living in London.
     buttons:
       - name: Blog
         url: blog/
@@ -112,15 +101,18 @@ extra:
         url: https://www.industrialempathy.com/posts/design-docs-at-google/
         icon: file-text
         blurb: Check out an article that I recently read.
+    cover_image: assets/images/me.png
+    description: |
+      I'm a Machine Learning Engineer at AXA Insurance UK, living in London.
+    tagline: Olly Overend
 
+# Page tree
 nav:
   - Home: index.md
   - Blog:
       - blog/index.md
   - Tags: blog/tags.md
 
-watch:
-  - assets
-
+# Extra CSS
 extra_css:
   - stylesheets/extra.css

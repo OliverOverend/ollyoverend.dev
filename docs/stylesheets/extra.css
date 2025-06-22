@@ -145,3 +145,14 @@
   --md-button-hover-bg-color:        #ffffff;
   --md-button-hover-color:        #0e538d;
 }
+
+.md-logo img,
+.md-header__logo img {
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  height: 72px !important;
+  width: auto !important;
+}
+.md-header__title {
+  font-size: 1.2rem;
+}

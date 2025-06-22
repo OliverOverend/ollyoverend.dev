@@ -92,7 +92,7 @@ extra:
       link: https://www.linkedin.com/in/ollyoverend/
 
   home:
-    cover_image: assets/images/me.jpg
+    cover_image: assets/images/me.png
     tagline: Olly Overend
     description: |
       I'm a Machine Learning Engineer at AXA Insurance UK, living in London.

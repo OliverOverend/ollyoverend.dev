@@ -3,6 +3,7 @@ site_name: ollyoverend.dev
 site_description: Olly Overend's personal website and blog.
 site_url: https://ollyoverend.dev
 repo_url: https://github.com/OliverOverend/ollyoverend.dev
+repo_name: ollyoverend.dev
 edit_uri: edit/main/docs/
 docs_dir: docs
 copyright: Copyright &copy; 2024 Olly Overend

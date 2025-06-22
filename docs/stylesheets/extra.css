@@ -47,9 +47,6 @@
 
   --md-typeset-a-color:                var(--md-primary-fg-color);
 
-  --md-typeset-del-color:              hsla(6, 90%, 60%, 0.15);
-  --md-typeset-ins-color:              hsla(150, 90%, 44%, 0.15);
-
   --md-typeset-kbd-color:              hsla(0, 0%, 98%, 1);
   --md-typeset-kbd-accent-color:       hsla(0, 100%, 100%, 1);
   --md-typeset-kbd-border-color:       hsla(0, 0%, 72%, 1);
@@ -62,12 +59,6 @@
   --md-admonition-fg-color:            var(--md-default-fg-color);
   --md-admonition-bg-color:            var(--md-default-bg-color);
 
-  --md-warning-fg-color:              hsla(0, 0%, 0%, 0.87);
-  --md-warning-bg-color:              hsla(60, 100%, 80%, 1);
-
-  --md-footer-fg-color:                hsla(0, 0%, 100%, 1);
-  --md-footer-fg-color--light:         hsla(0, 0%, 100%, 0.7);
-  --md-footer-fg-color--lighter:       hsla(0, 0%, 100%, 0.45);
   --md-footer-bg-color:                hsla(0, 0%, 0%, 0.87);
   --md-footer-bg-color--dark:          hsla(0, 0%, 0%, 0.32);
 
@@ -95,6 +86,7 @@
   --md-accent-bg-color--light:#1476b8;
 
   --md-hue: 225deg;
+
   --md-default-fg-color:             hsla(var(--md-hue), 15%, 90%, 0.82);
   --md-default-fg-color--light:      hsla(var(--md-hue), 15%, 90%, 0.56);
   --md-default-fg-color--lighter:    hsla(var(--md-hue), 15%, 90%, 0.32);

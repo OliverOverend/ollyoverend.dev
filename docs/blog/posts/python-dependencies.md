@@ -4,7 +4,7 @@ categories:
 date: 2025-06-21 
 tags:
   - dependencies
-updated: 2025-06-21 
+updated: 2025-06-22 
 ---
 
 # Managing Python Dependencies
@@ -17,7 +17,7 @@ An **application** is a Python package designed to be executed directly by users
 
 ## Library
 
-A **library** is a Python package meant to be used alongside other libraries within a shared environment. Unlike applications, **avoid pinning exact dependency versions** to avoid conflicts when other libraries require different versions of the same dependency. 
+A **library** is a Python package designed to be used alongside other libraries within a shared environment. Unlike applications, **avoid pinning exact dependency versions** to avoid conflicts when other libraries require different versions of the same dependency. 
 
 Instead:
 

@@ -13,9 +13,6 @@ theme:
     text: Merriweather Sans
     code: Red Hat Mono
   logo: assets/images/me.png
-  icon:
-    edit: material/pencil
-    view: material/eye
   favicon: assets/images/me.png
   features:
     - header.autohide

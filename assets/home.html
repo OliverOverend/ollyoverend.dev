@@ -4,7 +4,6 @@
 {% block tabs %}
 {{ super() }}
 
-
 <style>
     .md-main__inner {
         display: flex;
@@ -34,17 +33,13 @@
         height: 100%;
         padding-bottom: 1rem;
         margin: 0 auto;
-        /* padding-left: 10rem; */
     }
 
     .tx-hero__image {
-        /* margin-right: 10rem; */
         border-radius: 25px;
         width: 60%;
         height: 40%;
-        /* overflow: hidden; */
         order: 1;
-        /* display: flex; */
     }
 
     .tx-hero .md-button {
@@ -219,32 +214,17 @@
     <div class="md-grid md-typeset">
         <div class="tx-hero">
             <div class="tx-hero__image">
-                <img src="{{ config.extra.home_cover_image }}" draggable="false">
+                <img src="{{ config.extra.home.cover_image }}" draggable="false">
             </div>
             <div class="tx-hero__content">
-                <h1>{{ config.extra.home_tagline }}</h1>
-                <p>{{ config.extra.home_description }}</p>
-
-                <!-- Added Buttons (up to 3) -->
-                {%- if config.extra.home_button1_name -%}
-                <a href="{{ config.extra.home_button1_url }}" title="Material | MkDocs"
-                    class="{{ config.extra.home_button1_theme }}">
-                    {{ config.extra.home_button1_name }}
-                </a>
-                {%- endif -%}
-
-                {%- if config.extra.home_button2_name -%}
-                <a href="{{ config.extra.home_button2_url }}" title="Material | MkDocs"
-                    class="{{ config.extra.home_button2_theme }}">
-                    {{ config.extra.home_button2_name }}
-                </a>
-                {%- endif -%}
-
-                {%- if config.extra.home_button3_name -%}
-                <a href="{{ config.extra.home_button3_url }}" title="Material | MkDocs"
-                    class="{{ config.extra.home_button3_theme }}">
-                    {{ config.extra.home_button3_name }}
-                </a>
+                <h1>{{ config.extra.home.tagline }}</h1>
+                <p>{{ config.extra.home.description }}</p>
+                {%- if config.extra.home.buttons -%}
+                    {%- for button in config.extra.home.buttons -%}
+                    <a href="{{ button.url }}" class="{{ button.theme }}">
+                        {{ button.name }}
+                    </a>
+                    {%- endfor -%}
                 {%- endif -%}
             </div>
         </div>

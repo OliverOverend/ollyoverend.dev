@@ -202,3 +202,7 @@ __marimo__/
 
 # Python files
 *.py
+mkdocs.yml
+
+# VS Code
+.vscode/

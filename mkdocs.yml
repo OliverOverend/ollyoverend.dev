@@ -91,22 +91,21 @@ extra:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ollyoverend/
 
-  home_cover_image: assets/images/me.jpg
-  home_tagline: Olly Overend
-  home_description: |
-    I'm a Machine Learning Engineer at AXA Insurance UK, living in London.
-
-  home_button1_name: Blog
-  home_button1_url: blog/
-  home_button1_theme: md-button md-button--primary
-
-  home_button2_name: Tags
-  home_button2_url: blog/tags/
-  home_button2_theme: md-button md-button--primary
-
-  home_button3_name: Python
-  home_button3_url: blog/category/python/
-  home_button3_theme: md-button md-button--primary
+  home:
+    cover_image: assets/images/me.jpg
+    tagline: Olly Overend
+    description: |
+      I'm a Machine Learning Engineer at AXA Insurance UK, living in London.
+    buttons:
+      - name: Blog
+        url: blog/
+        theme: md-button md-button--primary
+      - name: Tags
+        url: blog/tags/
+        theme: md-button md-button--primary
+      - name: Python
+        url: blog/category/python/
+        theme: md-button md-button--primary
 
 nav:
   - Home: index.md

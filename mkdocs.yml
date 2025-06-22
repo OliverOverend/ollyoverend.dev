@@ -33,7 +33,6 @@ theme:
     - search.highlight # Highlight all occurrences of queried string
     - search.share # Search Query can be copied to Clipboard
     - search.suggest # Display likeliest completion for the last queried word
-    - toc.integrate
     - content.action.view
     - content.action.edit
 

@@ -152,8 +152,6 @@
 
 .md-logo img,
 .md-header__logo img {
-  border-radius: 50%;
-  border: 0.15rem solid #ffffff;
   height: 48px !important;
   width: auto !important;
 } 
@@ -164,7 +162,6 @@
 @media only screen and (max-width: 414px) {
   .md-logo img,
   .md-header__logo img {
-    border: 0.06rem solid #ffffff;
     height: 32px !important;
     width: auto !important;
   }

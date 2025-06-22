@@ -77,8 +77,7 @@
 
     .feature-item {
         border-radius: 20px;
-        margin-top: .5rem;
-        margin-right: .5rem;
+        margin: .5rem 1rem;
         background-color: white;
         font-family: 'Lato', sans-serif;
         font-weight: 300;
@@ -157,7 +156,7 @@
             max-width: 61rem;
             margin-right: auto;
             margin-left: auto;
-            padding: 0 .2rem;
+            padding: 0 1.5rem;
         }
 
         .bottom-hr {
@@ -167,12 +166,13 @@
             max-width: 61rem;
             margin-right: auto;
             margin-left: auto;
-            padding: 0 .2rem;
+            padding: 0 1.5rem;
         }
 
         .feature-item {
             flex: 1;
             min-width: 0;
+            margin: .5rem 1rem;
         }
 
         .feature-item:hover {
@@ -204,7 +204,7 @@
     </div>
 </section>
 
-<!-- iconsvg xyz -->
+<!-- https://iconsvg.xyz -->
 <div class="top-hr">
     {%- if config.extra.home.cards -%}
     {%- for card in config.extra.home.cards -%}

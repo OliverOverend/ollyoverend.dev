@@ -13,7 +13,6 @@
     }
 
     .tx-container {
-        height: 20rem;
         padding-top: .0rem;
     }
 
@@ -30,26 +29,18 @@
     }
 
     .tx-hero__content {
-        width: 100%;
-        height: 100%;
         padding-bottom: 1rem;
         margin: 0 auto;
     }
 
     .tx-hero__image {
-        width: 50%;
-        height: auto;
+        width: 17rem;
+        height: 17rem;
         order: 1;
-        overflow: hidden;
-        box-sizing: border-box;
-        margin-bottom: 1rem;
+        padding-right: 2.5rem;
     }
 
     .tx-hero__image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
         border-radius: 50%;
         border: 5px solid #ffffff;
     }
@@ -189,45 +180,6 @@
             border-radius: 3px;
         }
     }
-
-    .hr {
-        border-bottom: 1px solid #eee;
-        width: 100%;
-        margin: 20px 0;
-    }
-
-    .text-center {
-        text-align: center;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: 15px;
-        font-family: 'Lato', sans-serif;
-        font-size: 23px;
-        font-weight: 300;
-        padding-bottom: 10px;
-    }
-
-    .logos {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: row wrap;
-        margin: 0 auto;
-    }
-
-    .logos img {
-        flex: 1 1 auto;
-        padding: 25px;
-        max-height: 130px;
-        vertical-align: middle;
-    }
-
-    .hr-logos {
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
 </style>
 
 
@@ -256,7 +208,8 @@
 <div class="top-hr">
     {%- if config.extra.home.cards -%}
     {%- for card in config.extra.home.cards -%}
-    <a href="{{ card.url }}" class="feature-item">
+    <!-- <a href="{{ card.url }}" class="feature-item"> -->
+    <div class="feature-item">
         <h2>
             {%- if card.icon == "edit" -%}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -294,7 +247,7 @@
             {{ card.name }}
         </h2>
         <p>{{ card.blurb }}</p>
-    </a>
+    </div>
     {%- endfor -%}
     {%- endif -%}
 </div>

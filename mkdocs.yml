@@ -2,10 +2,16 @@ site_author: Olly Overend
 site_name: ollyoverend.dev
 site_description: Olly Overend's personal website and blog.
 site_url: https://ollyoverend.dev
+repo_url: https://github.com/OliverOverend/ollyoverend.dev
+edit_uri: edit/main/docs/
 docs_dir: docs
 copyright: Copyright &copy; 2024 Olly Overend
 
 theme:
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
   name: material
   custom_dir: assets
   font:

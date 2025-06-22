@@ -46,6 +46,7 @@
     }
 
     .tx-hero .md-button {
+        border-radius: 5px;
         margin-top: .5rem;
         margin-right: .5rem;
         color: var(--md-primary-bg-color)
@@ -57,7 +58,6 @@
         border-color: var(--md-button-primary-bg-color)
     }
 
-    .tx-hero .md-button:focus,
     .tx-hero .md-button:hover {
         background-color: var(--md-button-hover-bg-color);
         color: var(--md-button-hover-color);
@@ -68,7 +68,6 @@
         height: 30px;
         float: left;
         margin-right: 10px;
-        transform: translateY(10%);
     }
 
     .top-hr {
@@ -78,24 +77,19 @@
     .feature-item {
         border-radius: 20px;
         margin: .5rem 1rem;
-        background-color: white;
         font-family: 'Lato', sans-serif;
-        font-weight: 300;
         box-sizing: border-box;
         padding: 0 15px;
-        word-break: break-word
+        word-break: break-word;
+        background-color: white;
     }
 
     .feature-item:hover {
-        border-radius: 20px !important;
-        background-color: white !important;
-        transform: none !important;
-        box-shadow: none !important;
-        cursor: default !important;
+        background-color: rgb(233, 233, 233);
     }
 
     .feature-item h2 {
-        color: #333;
+        color: rgb(46, 46, 46);
         font-weight: 300;
         font-size: 25px;
         white-space: nowrap;
@@ -112,7 +106,7 @@
         line-height: 1.8em;
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;
-        color: #111;
+        color: rgb(46, 46, 46);
         margin: 0 0 10px;
         display: block;
     }
@@ -174,11 +168,6 @@
             min-width: 0;
             margin: .5rem 1rem;
         }
-
-        .feature-item:hover {
-            background-color: #526cfe47;
-            border-radius: 3px;
-        }
     }
 </style>
 
@@ -194,7 +183,7 @@
                 <p>{{ config.extra.home.description }}</p>
                 {%- if config.extra.home.buttons -%}
                 {%- for button in config.extra.home.buttons -%}
-                <a href="{{ button.url }}" class="{{ button.theme }}">
+                <a href="{{ button.url }}" class="md-button md-button--primary">
                     {{ button.name }}
                 </a>
                 {%- endfor -%}

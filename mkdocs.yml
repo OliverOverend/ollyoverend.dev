@@ -96,10 +96,8 @@ extra:
     buttons:
       - name: Blog
         url: blog/
-        theme: md-button md-button--primary
       - name: Tags
         url: blog/tags/
-        theme: md-button md-button--primary
     cards:
       - name: Latest Post
         url: blog/2025/06/21/managing-python-dependencies/

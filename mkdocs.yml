@@ -97,14 +97,11 @@ extra:
     description: |
       I'm a Machine Learning Engineer at AXA Insurance UK, living in London.
     buttons:
-      - name: Blog
-        url: blog/
+      - name: Latest Post
+        url: blog/2025/06/21/managing-python-dependencies/
         theme: md-button md-button--primary
-      - name: Tags
-        url: blog/tags/
-        theme: md-button md-button--primary
-      - name: Python
-        url: blog/category/python/
+      - name: Recently Read
+        url: https://www.industrialempathy.com/posts/design-docs-at-google/
         theme: md-button md-button--primary
 
 nav:

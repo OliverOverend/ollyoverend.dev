@@ -13,7 +13,7 @@ Python packages often rely on a complex network of other packages to function. W
 
 ## Application
 
-An **application** is a Python package designed to be executed directly by users or deployed as a standalone service. There is no requirement for an application to be compatible with other libraries. To ensure reproducibility across development, testing, and production environments, it's best practise to **pin all dependencies and sub-dependencies** using a lockfile (e.g. `requirements.txt` or `poetry.lock`).
+An **application** is a Python package designed to be executed directly by users or deployed as a standalone service. There is typically no requirement for an application to be compatible with other libraries. To ensure reproducibility across development, testing, and production environments, it's best practise to **pin all dependencies and sub-dependencies** using a lockfile (e.g. `requirements.txt` or `poetry.lock`).
 
 ## Library
 

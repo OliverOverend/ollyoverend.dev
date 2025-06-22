@@ -149,9 +149,9 @@
 .md-logo img,
 .md-header__logo img {
   border-radius: 50%;
-  border: 0.15rem solid #ffffff;
-  height: 48px !important;
-  width: auto !important;
+  border: 0.08rem solid #ffffff;
+  /* height: 48px !important; */
+  /* width: auto !important; */
 }
 .md-header__title {
   font-size: 1.2rem;

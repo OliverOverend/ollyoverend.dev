@@ -14,7 +14,7 @@ theme:
     code: Red Hat Mono
   logo: assets/images/me.png
   icon:
-    edit: material/pencil 
+    edit: material/pencil
     view: material/eye
   favicon: assets/images/me.png
   features:
@@ -83,7 +83,7 @@ plugins:
       pagination_per_page: 5
   - material/tags:
       tags_file: blog/tags.md
-  
+
 extra:
   social:
     - icon: fontawesome/brands/github-alt
@@ -97,17 +97,26 @@ extra:
     description: |
       I'm a Machine Learning Engineer at AXA Insurance UK, living in London.
     buttons:
+      - name: Blog
+        url: blog/
+        theme: md-button md-button--primary
+      - name: Tags
+        url: blog/tags/
+        theme: md-button md-button--primary
+    cards:
       - name: Latest Post
         url: blog/2025/06/21/managing-python-dependencies/
-        theme: md-button md-button--primary
-      - name: Recently Read
+        icon: clock
+        blurb: Check out my latest post.
+      - name: Featured Article
         url: https://www.industrialempathy.com/posts/design-docs-at-google/
-        theme: md-button md-button--primary
+        icon: file-text
+        blurb: Check out an article that I recently read.
 
 nav:
   - Home: index.md
   - Blog:
-    - blog/index.md
+      - blog/index.md
   - Tags: blog/tags.md
 
 watch:

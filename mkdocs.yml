@@ -46,17 +46,17 @@ theme:
     - media: "(prefers-color-scheme)"
       toggle:
         name: Switch to light mode
-        icon: material/link
+        icon: material/brightness-auto
     - media: "(prefers-color-scheme: light)"
       scheme: custom-light
       toggle:
         name: Switch to dark mode
-        icon: material/toggle-switch
+        icon: material/weather-sunny
     - media: "(prefers-color-scheme: dark)"
       scheme: custom-dark
       toggle:
         name: Switch to system preference
-        icon: material/toggle-switch-off
+        icon: material/weather-night
 
 # Extensions
 markdown_extensions:
@@ -68,6 +68,12 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+
+  # Emoji
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - blog:
@@ -89,17 +95,20 @@ extra:
   home:
     buttons:
       - name: Blog
+        icon: solid/clock
         url: blog/
       - name: Tags
+        icon: solid/clock
         url: blog/tags/
     cards:
+      # Icons can be found here: https://fontawesome.com/icons
       - name: Latest Post
         url: blog/2025/06/21/managing-python-dependencies/
-        icon: clock
+        icon: solid/clock
         blurb: Check out my latest post.
       - name: Featured Article
         url: https://www.industrialempathy.com/posts/design-docs-at-google/
-        icon: file-text
+        icon: solid/file-lines
         blurb: Check out an article that I recently read.
     cover_image: assets/images/me.png
     description: |

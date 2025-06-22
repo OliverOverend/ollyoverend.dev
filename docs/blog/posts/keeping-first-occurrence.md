@@ -1,11 +1,12 @@
 ---
 categories:
   - Python
-date: 2025-06-21 
+date:
+  created: 2025-06-21 
+  updated: 2025-06-21 
 draft: true
 tags:
   - numpy
-updated: 2025-06-21 
 ---
 
 ``` py linenums="1"

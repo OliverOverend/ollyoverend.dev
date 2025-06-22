@@ -150,7 +150,7 @@
 .md-header__logo img {
   border-radius: 50%;
   border: 0.15rem solid #ffffff;
-  height: 2rem !important;
+  height: 48px !important;
   width: auto !important;
 }
 .md-header__title {

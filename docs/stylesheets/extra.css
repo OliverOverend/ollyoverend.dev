@@ -153,14 +153,18 @@
   height: 48px !important;
   width: auto !important;
 } 
+.md-header__title {
+  font-size: 1.2rem;
+}
 
 @media only screen and (max-width: 414px) {
   .md-logo img,
   .md-header__logo img {
+    border: 0.06rem solid #ffffff;
     height: 32px !important;
     width: auto !important;
   }
-}
-.md-header__title {
-  font-size: 1.2rem;
+  .md-header__title {
+    font-size: 0.8rem;
+  }
 }

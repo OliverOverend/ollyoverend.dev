@@ -107,7 +107,7 @@ extra:
         icon: regular/bell
         blurb: Check out my latest post.
       - name: Recently Read
-        url: blog/2025/06/23/recently-read/
+        url: blog/2025/06/20/recently-read/
         icon: brands/readme
         blurb: Check out what I've recently read.
     cover_image: assets/images/me.png

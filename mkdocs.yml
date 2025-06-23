@@ -6,7 +6,7 @@ site_url: https://oliveroverend.github.io/ollyoverend.dev/
 
 # Repository
 edit_uri: edit/main/docs/
-# Setting 'repo_name' introduced a bug on iOS.
+repo_name: ollyoverend.dev
 repo_url: https://github.com/OliverOverend/ollyoverend.dev
 
 # Copyright

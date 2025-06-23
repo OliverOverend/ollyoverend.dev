@@ -2,7 +2,7 @@
 [data-md-color-scheme="custom-light"] {
   --md-primary-fg-color:        #6bb9f5;
   --md-primary-fg-color--light: #ffffff;
-  --md-primary-fg-color--dark:  #000000;
+  --md-primary-fg-color--dark:  #6bb9f5c7;
 
   --md-primary-bg-color:  #000000;
   --md-primary-bg-color--light:  #ffffff;
@@ -74,7 +74,7 @@
 [data-md-color-scheme="custom-dark"] {
   --md-primary-fg-color:        #144367;
   --md-primary-fg-color--light: #2974ad;
-  --md-primary-fg-color--dark:  #000000;
+  --md-primary-fg-color--dark:  #144367b4;
 
   --md-primary-bg-color:  #ffffff;
   --md-primary-bg-color--light:  #ffffff;

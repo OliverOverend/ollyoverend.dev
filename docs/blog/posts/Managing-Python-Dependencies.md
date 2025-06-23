@@ -8,8 +8,6 @@ tags:
   - dependencies
 ---
 
-# Managing Python Dependencies
-
 Python packages often rely on a complex network of other packages to function. When publishing a Python package, it’s essential to define which dependencies are required and to specify the range of compatible versions.
 
 ## Application

@@ -101,15 +101,15 @@ extra:
         icon: solid/clock
         url: blog/tags/
     cards:
-      # Icons can be found here: https://fontawesome.com/icons
+      # Icons can be found here: https://fontawesome.com/icons and https://github.com/FortAwesome/Font-Awesome/tree/6.x/svgs. Remember to include brands/regular/solid.
       - name: Latest Post
         url: blog/2025/06/21/managing-python-dependencies/
-        icon: solid/clock
+        icon: regular/bell
         blurb: Check out my latest post.
-      - name: Featured Article
-        url: https://www.industrialempathy.com/posts/design-docs-at-google/
-        icon: solid/file-lines
-        blurb: Check out an article that I recently read.
+      - name: Recently Read
+        url: blog/2025/06/23/recently-read/
+        icon: brands/readme
+        blurb: Check out what I've recently read.
     cover_image: assets/images/me.png
     description: |
       I'm a Machine Learning Engineer at AXA Insurance UK, living in London.

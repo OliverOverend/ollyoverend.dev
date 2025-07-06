@@ -15,7 +15,7 @@ copyright: Copyright &copy; 2025 Olly Overend
 # Configuration
 theme:
   custom_dir: docs/html/
-  favicon: assets/images/me.png
+  favicon: assets/images/me_square.png
   features:
     - announce.dismiss
     - content.action.edit
@@ -40,7 +40,7 @@ theme:
     edit: material/pencil
     repo: fontawesome/brands/github
     view: material/eye
-  logo: assets/images/me.png
+  logo: assets/images/me_square.png
   name: material
   palette:
     - media: "(prefers-color-scheme)"
@@ -110,7 +110,7 @@ extra:
         url: blog/2025/06/20/recently-read/
         icon: brands/readme
         blurb: Check out what I've recently read.
-    cover_image: assets/images/me.png
+    cover_image: assets/images/me_square.png
     description: |
       I'm a Machine Learning Engineer at AXA Insurance UK, living in London.
     tagline: Olly Overend

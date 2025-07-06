@@ -206,3 +206,4 @@ mkdocs.yml
 
 # VS Code
 .vscode/
+.DS_Store

@@ -82,7 +82,14 @@ plugins:
       pagination_per_page: 5
   - material/tags:
       tags_file: blog/tags.md
-  - search
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+      lang:
+        - en
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
 
 # Extra configuration
 extra:
@@ -91,6 +98,20 @@ extra:
       link: https://github.com/OliverOverend
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ollyoverend/
+
+  # Giscus commenting system
+  giscus:
+    enabled: true
+    repo: OliverOverend/ollyoverend.dev
+    repo_id: R_kgDONhq-Cw
+    category: General
+    category_id: DIC_kwDONhq-C84CmJg8
+    mapping: pathname
+    reactions_enabled: true
+    emit_metadata: false
+    theme: preferred_color_scheme
+    lang: en
+    loading: lazy
 
   home:
     buttons:
@@ -121,7 +142,14 @@ nav:
   - Blog:
       - blog/index.md
   - Tags: blog/tags.md
+  - Bookmarks: bookmarks.md
+  - Contact: contact.md
 
 # Extra CSS
 extra_css:
   - stylesheets/extra.css
+
+# Extra JavaScript
+extra_javascript:
+  - javascripts/copy-link.js
+  - javascripts/bookmarks.js

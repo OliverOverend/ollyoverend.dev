@@ -166,3 +166,40 @@
     width: 1rem;
     height: 1rem;
 }
+
+/* Copy link button styles */
+.copy-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  padding: 0.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, background-color 0.2s;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+h2:hover .copy-link-button,
+h3:hover .copy-link-button,
+h4:hover .copy-link-button,
+h5:hover .copy-link-button,
+h6:hover .copy-link-button {
+  opacity: 0.6;
+}
+
+.copy-link-button:hover {
+  opacity: 1 !important;
+  background-color: var(--md-default-bg-color--lighter);
+}
+
+.copy-link-button svg {
+  fill: var(--md-default-fg-color--light);
+}
+
+.copy-link-button.copied svg {
+  fill: var(--md-accent-fg-color);
+}

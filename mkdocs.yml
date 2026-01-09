@@ -22,6 +22,7 @@ theme:
     - content.action.view
     - content.code.copy
     - header.autohide
+    - navigation.breadcrumbs
     - navigation.expand
     - navigation.footer
     - navigation.indexes
@@ -94,11 +95,17 @@ extra:
 
   home:
     buttons:
+      - name: About
+        icon: solid/user
+        url: about/
+      - name: Projects
+        icon: solid/folder-open
+        url: projects/
       - name: Blog
         icon: solid/clock
         url: blog/
       - name: Tags
-        icon: solid/clock
+        icon: solid/tag
         url: blog/tags/
     cards:
       # Icons can be found here: https://fontawesome.com/icons and https://github.com/FortAwesome/Font-Awesome/tree/6.x/svgs. Remember to include brands/regular/solid.
@@ -118,6 +125,8 @@ extra:
 # Page tree
 nav:
   - Home: index.md
+  - About: about.md
+  - Projects: projects.md
   - Blog:
       - blog/index.md
   - Tags: blog/tags.md

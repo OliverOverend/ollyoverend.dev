@@ -80,6 +80,8 @@ plugins:
       archive_date_format: MMMM yyyy
       blog_toc: false
       pagination_per_page: 5
+      post_readtime: true
+      post_readtime_words_per_minute: 265
   - material/tags:
       tags_file: blog/tags.md
   - search

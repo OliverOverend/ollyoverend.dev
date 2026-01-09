@@ -9,6 +9,9 @@ tags:
   - dependencies
   - packaging
   - best-practices
+series: Python Best Practices
+series_order: 1
+series_description: A comprehensive guide to Python development best practices
 ---
 
 # Managing Python Dependencies

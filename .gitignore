@@ -200,10 +200,8 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Python files
-*.py
-mkdocs.yml
-
 # VS Code
 .vscode/
+
+# macOS
 .DS_Store

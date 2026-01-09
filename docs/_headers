@@ -1,0 +1,42 @@
+# Caching Headers for Static Assets
+# Note: GitHub Pages has limited support for custom headers
+# This file serves as documentation for future CDN configuration
+
+# Cache static assets for 1 year
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache CSS and JS for 1 year with immutable flag
+/*.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache images for 1 year
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache fonts for 1 year
+/*.woff
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+
+# Don't cache HTML files - revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Don't cache the root index
+/
+  Cache-Control: public, max-age=0, must-revalidate

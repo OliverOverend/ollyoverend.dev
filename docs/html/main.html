@@ -7,4 +7,16 @@
 {% block extrahead %}
     <!-- main.html | Added "navigation.instant" support -->
     <link rel="canonical" href=".">
+
+    <!-- Privacy-friendly Analytics with Plausible -->
+    <!-- Replace 'yourdomain.com' with your actual domain when you set up Plausible -->
+    <!-- Uncomment when ready: <script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script> -->
+
+    <!-- Performance optimizations: preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- DNS prefetch for faster resource loading -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 {% endblock %}

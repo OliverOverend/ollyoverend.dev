@@ -166,3 +166,18 @@
     width: 1rem;
     height: 1rem;
 }
+
+/* Performance optimization: ensure fonts display swap for faster render */
+@font-face {
+  font-display: swap;
+}
+
+/* Image optimization: lazy loading hint for browsers */
+img {
+  content-visibility: auto;
+}
+
+/* Reduce layout shift with proper image dimensions */
+img[width][height] {
+  height: auto;
+}

@@ -1,7 +1,7 @@
 ---
 date:
   created: 2025-06-20
-  updated: 2025-06-23
+  updated: 2026-04-24
 description: A collection of technical articles and books I've recently read.
 categories:
   - Reading

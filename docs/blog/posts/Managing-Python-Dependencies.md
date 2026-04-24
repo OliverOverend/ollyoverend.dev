@@ -3,7 +3,7 @@ categories:
   - Python
 date:
   created: 2025-06-21
-  updated: 2025-06-22
+  updated: 2026-04-24
 description: A practical guide to managing Python dependencies, understanding the difference between applications and libraries, and making informed decisions about version constraints.
 tags:
   - dependencies

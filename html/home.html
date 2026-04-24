@@ -1,0 +1,197 @@
+<!-- Stole this from https://github.com/tylerdotrar/mkdocs-coverpage -->
+
+<!-- Elements added to "home.html" will only be displayed on the home page -->
+
+{% extends "main.html" %}
+{% block tabs %}
+{{ super() }}
+
+<style>
+    .md-main__inner {
+        display: flex;
+        height: 100%;
+    }
+
+    .tx-hero {
+        margin: 32px 2.8rem;
+        color: var(--md-primary-bg-color);
+    }
+
+    .tx-hero h1 {
+        margin-bottom: 1rem;
+        color: currentColor;
+        font-weight: 700;
+    }
+
+    .tx-hero__image {
+        width: 15rem;
+        height: 15rem;
+        order: 1;
+        padding-top: 1rem;
+        padding-right: 2.5rem;
+    }
+
+    .tx-hero .md-button {
+        margin-right: .5rem;
+    }
+
+    .tx-hero .md-button--primary {
+        background-color: var(--md-button-primary-bg-color);
+        color: var(--md-button-primary-color);
+        border-color: var(--md-button-primary-border-color);
+        border-width: 3px;
+    }
+
+    .tx-hero .md-button:hover {
+        background-color: var(--md-button-hover-bg-color);
+        color: var(--md-button-hover-color);
+        border-color: var(--md-button-hover-border-color)
+    }
+
+    .feature-item h2 svg {
+        height: 26px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .top-hr {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 61rem;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 1.5rem;
+    }
+
+    .feature-item {
+        flex: 1;
+        min-width: 250px;
+        border-radius: 2px;
+        margin: .5rem .5rem;
+        font-family: 'Lato', sans-serif;
+        box-sizing: border-box;
+        padding: 0 15px;
+        word-break: break-word;
+        background-color: white;
+    }
+
+    .feature-item:hover {
+        background-color: rgb(233, 233, 233);
+    }
+
+    .feature-item h2 {
+        color: rgb(46, 46, 46);
+        font-weight: 300;
+        font-size: 25px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .feature-item p {
+        font-size: 16px;
+        line-height: 1.8em;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        color: rgb(46, 46, 46);
+        margin: 0 0 10px;
+        display: block;
+    }
+
+    @media screen and (max-width:30em) {
+        .tx-hero h1 {
+            font-size: 1.4rem
+        }
+    }
+
+    @media screen and (min-width:60em) {
+        .md-sidebar--secondary {
+            display: none
+        }
+
+        .tx-hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tx-hero__content {
+            max-width: 42rem;
+            margin-top: 3.5rem;
+            margin-bottom: 3.5rem;
+            margin-right: 4.0rem;
+            align-items: center;
+        }
+    }
+
+
+    @media screen and (min-width:76.25em) {
+        .md-sidebar--primary {
+            display: none
+        }
+
+        .top-hr {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 61rem;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 0 1.5rem;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 250px;
+            margin: .5rem .5rem;
+        }
+    }
+</style>
+
+
+<section class="tx-container">
+    <div class="md-grid md-typeset">
+        <div class="tx-hero">
+            <div class="tx-hero__image">
+                <img src="{{ config.extra.home.cover_image }}" draggable="false">
+            </div>
+            <div class="tx-hero__content">
+                <h1>{{ config.extra.home.tagline }}</h1>
+                <p>{{ config.extra.home.description }}</p>
+                {%- if config.extra.home.buttons -%}
+                {%- for button in config.extra.home.buttons -%}
+                <a href="{{ button.url }}" class="md-button md-button--primary" draggable="false">
+                    {{ button.name }}
+                </a>
+                {%- endfor -%}
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- https://iconsvg.xyz -->
+<div class="top-hr">
+    {%- if config.extra.home.cards -%}
+    {%- for card in config.extra.home.cards -%}
+    <div class="feature-item">
+        <a href="{{ card.url }}" draggable="false">
+            <h2>
+                <span class="twemoji">
+                    {% include ".icons/fontawesome/" ~ card.icon ~ ".svg" %}
+                    {{card.name}}
+                </span>
+            </h2>
+            <p>{{ card.blurb }}</p>
+        </a>
+    </div>
+    {%- endfor -%}
+    {%- endif -%}
+</div>
+
+{% block content %}{% endblock %}
+{% endblock %}

@@ -72,9 +72,10 @@ markdown_extensions:
   # Emoji
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji ""
+      emoji_generator:
 
+        !!python/name:material.extensions.emoji.to_svg ""
 plugins:
   - blog:
       archive_date_format: MMMM yyyy
@@ -104,10 +105,6 @@ extra:
         url: blog/tags/
     cards:
       # Icons can be found here: https://fontawesome.com/icons and https://github.com/FortAwesome/Font-Awesome/tree/6.x/svgs. Remember to include brands/regular/solid.
-      - name: Latest Post
-        url: blog/2025/06/21/managing-python-dependencies/
-        icon: regular/bell
-        blurb: Check out my latest post.
       - name: Recently Read
         url: blog/2025/06/20/recently-read/
         icon: brands/readme
